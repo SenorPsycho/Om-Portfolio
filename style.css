@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body{
+    background-color: #8B0000;
+    color: #FFFFFF;
+}
+
+/* -------------section1----------- */
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 10; 
+    padding: 15px 0;
+}
+header nav {
+    background-color: #B22222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+}
+nav .logo{
+    font-size: 22px;
+    white-space: nowrap;
+    padding-left: 50px;
+}
+nav .list{
+    padding-right: 50px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+}
+ul li{
+    list-style: none;
+}
+.list ul li a:hover{
+    color: #FF6347;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main #Home{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 100px;
+    padding: 20px;
+}
+main #Home .left{
+    height: 90%;
+    padding-left: 80px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.left .info{
+    display: flex;
+    gap: 30px;
+}
+.left .info .btn{
+    border: 1px solid #FF6347;
+    width: 115px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-weight:500;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #FF6347;
+    box-shadow: 0px 0px 6px 1px #FF6347;
+}
+.left .info .btn a{
+    text-decoration: none;
+    color: #8B0000;
+}
+.left .info .btn:hover{
+    background-color: #8B0000;
+    border: 1.5px solid #FF6347;
+    box-shadow: 0px 0px 0px 0px #FF6347;
+}
+.left .info .btn:hover a{
+ color: #FF6347;
+}
+.social-icon{
+    display: flex;
+    gap: 10px;
+}
+.social-icon .fa-brands{
+    height: 30px;
+    width: 30px;
+    color: #FF6347;
+    border: 1.5px solid #FF6347;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social-icon .fa-brands:hover{
+    background-color: #FF6347;
+    box-shadow: 0px 0px 6px 1px #FF6347;
+    color: #8B0000;
+}
+main #Home .right{
+    height: 90%;
+    width: min(500px,80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+#Home .right .circle{
+height: 400px;
+width: 400px;
+background-color: #8B0000;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: -100px;
+position: absolute;
+right: 28px;
+overflow: hidden;
+}
+
+
+#Home .right .circle .image{
+height: 98%;
+width: 98%;
+border-radius: 50%;
+background-color: #8B0000;
+background-image: url('profile.jpeg');
+background-position: center center;
+background-size: 300px;
+background-repeat: no-repeat;
+z-index: 2;
+}
+
+#Home .right .circle .image img{
+position:absolute;
+}
+
+/* ---------------section2-------------- */
+#About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#About .left1 {
+    height: 550px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 2px 30px 50px;
+}
+
+#About .left1 .card1 {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#About .left1 .card1 img{
+    height: 700px;
+    object-fit: cover;
+    object-position: center -70px;
+}
+
+#About .right1 {
+    height: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 30px 2px;
+}
+
+#About .right1 .card2 {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#About .right1 .card2 .part2 .selectRole ul li{
+    font-weight: bold;
+}
+#About .right1 .card2 .part2 .selectRole ul li:hover{
+    color: #FF6347;
+}
+#About .right1 .card2 .part2 .selectRole{
+    margin-bottom: 20px;
+}
+.title{
+    margin-bottom: 10px;
+}
+.smalltitle{
+    font-size: 12px;
+    color: #FF4500;
+    font-weight: bold;
+}
+
+/* -----------------section3-------------- */
+#Projects {
+    margin: 20px 0px;
+}
+#Projects .cardContainer{
+    padding: 20px 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 385px;
+}
+#Projects .cardContainer .card{
+    max-width: 300px;
+    height: 350px;
+    font-size: 11px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #0c0c0c;
+    position: relative;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+#Projects .cardContainer .card:hover{
+    background-color: #CD5C5C;
+    transform: scale(1.01); 
+}
+#Projects .cardContainer .card img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.heading{
+    text-align: center;
+    margin: 15px 0px;
+}
+#Projects .cardContainer .card .btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.button{
+    width: 115px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1.5px solid #FF6347;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #FF6347;
+    box-shadow: 0px 0px 6px 1px #FF6347;
+}
+.button:hover{
+    background-color: #8B0000;
+    color: #FF6347;
+    border: 1.5px solid #FF6347;
+    box-shadow: 0px 0px 0px 0px #FF6347;
+}
+.button a{
+    color: #8B0000;
+    text-decoration: none;
+}
+
+/* ------------footer------------ */
+footer .info{
+    background-color: #B22222;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+footer .info .underline{
+    height: 2px;
+    width: 80%;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+footer .info span{
+    color: #D3D3D3;
+}
+.copyRight{
+    color: #FF6347;
+}
+
+/* ------------section4-------------- */
+#Contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#Contact form input, #Contact form textarea {
+    width: min(500px, 80vw);
+    height: 30px;
+    padding: 0px 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+#Contact form textarea {
+    height: 200px;
+}
+.btn-send{
+    font-size: 16px;
+}
+
+/* ---------------side bar and hamburger------------- */
+.hamburger{
+    display: none;
+}
+.slide{
+    height: 100%;
+    width: 200px;
+    background-color: #B22222;
+    position:absolute;
+    z-index: 15;
+    right: 0;
+    display: none;
+}
+.slide-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ----------media query for responsive------------- */
+
+@media screen and (max-width:1150px) {
+    #Projects .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .slide{
+        position:fixed;
+        top: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav .list ul{
+        display: none;
+    }
+    nav .logo{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    header nav .list .hamburger{
+        width: 40px;
+    }
+    #Projects .cardContainer{
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #About .right1{
+        width: 90%;
+        padding: 0px;
+    }
+    #About .about{
+        text-align: center;
+        margin-top: -30px;
+    }
+    #About .left1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #Projects .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .logo {
+        font-size: 18px; 
+    }
+    #Home .left .info{
+        display: flex;
+        flex-direction: column;
+    }
+    #Home .right .circle{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #Home .right{
+        margin-left: 20px;
+    }
+    #Home .right .circle{
+        width: 300px;
+        height: 300px;
+    }
+    #Home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #Home .left{
+        margin-top: -150px;
+        width: 80%;
+        padding-left: -80px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav .logo{
+        padding-left: 0px;
+    }
+    nav .list{
+        padding-right: 0px;
+    }
+}
+
+.hide1{
+    display: none;
+}
+.hide2{
+    display: none;
+}
+.hide3{
+    display: none;
+}
